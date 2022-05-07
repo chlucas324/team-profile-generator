@@ -9,18 +9,22 @@ test('creates an employee object', () => {
     expect(employee.email).toBe('chlucas324@gmail.com');
 });
 
+//gets employee name
 test('gets employee name', () => {
     expect(employee.getName()).toBe('Caitlin');
 });
 
-test('gets employee role', () => {
-    expect(employee.getRole()).toBe('Employee');
-});
-
+// gets employee id
 test('gets employee id', () => {
     expect(employee.getId()).toBe('124280');
 })
 
+//gets employee email
 test('gets employee email', () => {
     expect(employee.getEmail()).toBe('chlucas324@gmail.com');
+});
+
+//gets employee role
+test('gets employee role', () => {
+    expect(employee.getRole()).toBe('Employee');
 });
