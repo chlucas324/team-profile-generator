@@ -14,8 +14,8 @@ test('gets engineer object', () => {
 
 //gets engineer name
 test('gets engineer name', () => {
-        expect(engineer.getName()).toBe('Caitlin');
-    
+    expect(engineer.getName()).toBe('Caitlin');
+
 });
 
 //gets engineer id
