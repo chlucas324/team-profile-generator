@@ -14,7 +14,9 @@
   The user needs to install Node, a file system, and the inquirer module.  If using the testing, Jest will also be needed.
 
   ## Usage
-  The user uses inquirer in the command line to answer prompts about the team profile.
+  The user uses inquirer in the command line to answer prompts about the team profile.  See walkthrough video for more details.
+
+  https://drive.google.com/file/d/11HFy_NDZWlQGVny0xyps9f5puCqV2vlU/view
 
 
   ### Questions
