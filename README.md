@@ -16,8 +16,7 @@
   ## Usage
   The user uses inquirer in the command line to answer prompts about the team profile.  See walkthrough video for more details.
 
-  https://drive.google.com/file/d/11HFy_NDZWlQGVny0xyps9f5puCqV2vlU/view
-
+https://drive.google.com/file/d/11HFy_NDZWlQGVny0xyps9f5puCqV2vlU/preview
 
   ### Questions
   To request additional information: 
