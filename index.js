@@ -165,32 +165,32 @@ const addEmployee = () => {
             default: false
         }
     ])
-// data for all employee types
-.then(employeeData => {
+        // data for all employee types
+        .then(employeeData => {
 
-    let {name, id, email, role, gitHubUserName, school, confirmAddEmployee } = employeeData;
-    let employee;
+            let { name, id, email, role, gitHubUserName, school, confirmAddEmployee } = employeeData;
+            let employee;
 
-    if (role === "Engineer") {
-        employee = new Engineer(name, id, email, gitHubUserName);
+            if (role === "Engineer") {
+                employee = new Engineer(name, id, email, gitHubUserName);
 
-        console.log(employee);
+                console.log(employee);
 
-    } else if (role === "Intern") {
-        employee = new Intern(name, id, email, school);
+            } else if (role === "Intern") {
+                employee = new Intern(name, id, email, school);
 
-        console.log(employee);
-    }
+                console.log(employee);
+            }
 
-    // add new employee to team array
-    teamArray.push(employee);
+            // add new employee to team array
+            teamArray.push(employee);
 
-    if (confirmAddEmployee) {
-        return addEmployee(teamArray);
-    } else {
-        return teamArray;
-    }
-})
+            if (confirmAddEmployee) {
+                return addEmployee(teamArray);
+            } else {
+                return teamArray;
+            }
+        })
 
 };
 
@@ -201,20 +201,20 @@ const writeFile = data => {
         if (err) {
             console.log(err);
             return;
-        // no errors and profile is created    
+            // no errors and profile is created    
         } else {
             console.log("Your profile has been succesfully created!")
         }
     })
 };
 addManager()
-.then(addEmployee)
-.then(teamArray => {
-    return generateHTML(teamArray);
-})
-.then(pageHTML => {
-    return writeFile(pageHTML);
-})
-.catch(err => {
-    console.log(err);
-});
+    .then(addEmployee)
+    .then(teamArray => {
+        return generateHTML(teamArray);
+    })
+    .then(pageHTML => {
+        return writeFile(pageHTML);
+    })
+    .catch(err => {
+        console.log(err);
+    });
