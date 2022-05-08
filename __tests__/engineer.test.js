@@ -1,6 +1,3 @@
-const { expect } = require('expect');
-const { test } = require('jest-circus');
-const { getMaxListeners } = require('process');
 const Engineer = require('../lib/Engineer');
 const engineer = new Engineer('Caitlin', '124280', 'chlucas324@gmail.com', 'chlucas324');
 

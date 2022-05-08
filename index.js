@@ -120,7 +120,7 @@ const addEmployee = () => {
         },
         {
             type: 'input',
-            name: 'id',
+            name: 'email',
             message: "Please enter the employee's email.",
             validate: email => {
                 valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)

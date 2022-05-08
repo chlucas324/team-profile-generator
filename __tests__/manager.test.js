@@ -1,5 +1,3 @@
-const { expect } = require('expect');
-const { test } = require('picomatch');
 const Manager = require('../lib/Manager');
 const manager = new Manager('Caitlin', '124280', 'chlucas324@gmail.com', '243');
 
